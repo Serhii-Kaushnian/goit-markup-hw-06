@@ -636,6 +636,66 @@ body {
     color: var(--secondary-text-color);
 }
 
+.subscribe {
+    margin-left: 93px;
+}
+.subscribe_text {
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.subscribe_form {
+}
+.subscribe_label {
+    position: relative;
+    display: flex;
+    width: 570px;
+
+    height: 50px;
+    fill: #ffffff;
+}
+.subscribe_input {
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    border: 1px solid rgba(138, 138, 138, 0.767);
+    flex: 1 0 auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+}
+
+.subscribe_button {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    padding: 10px 62px 10px 29px;
+
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe_button:hover,
+.subscribe_button:hover {
+    background-color: #188ce8;
+}
+.subscribe_button-icon {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+}
 /* ====Styles for Portfolio page=================================================== */
 
 /* ======Filter list======= */
