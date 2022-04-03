@@ -310,10 +310,8 @@ body {
 
 .modal-button {
     position: absolute;
-    right: 28px;
-    transform: translateX(50%);
-    top: 0;
-    margin: 8px;
+    top: 8px;
+    right: 8px;
     padding: 0;
     border: none;
     font-size: 0;
@@ -346,9 +344,7 @@ body {
 .modal_item:not(:last-child) {
     margin-bottom: 10px;
 }
-.modal_item:last-child {
-    margin-bottom: 20px;
-}
+
 .modal_label {
     position: relative;
     display: flex;
@@ -386,6 +382,9 @@ body {
 }
 .modal_textarea:focus {
     border-color: var(--accent-color);
+}
+.modal_list {
+    margin-bottom: 20px;
 }
 .modal_link {
     text-decoration: none;
@@ -456,6 +455,7 @@ body {
     text-align: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--accent-color);
+    cursor: pointer;
 }
 
 .modal_submit:focus,
@@ -618,8 +618,7 @@ body {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    fill: #ffffff;
-
+    fill: #afb1b8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -690,6 +689,10 @@ body {
 
 .footer-logo {
     color: var(--secondary-text-color);
+}
+
+.footer_contacts {
+    flex-grow: 1;
 }
 
 .footer-container {
@@ -789,18 +792,20 @@ body {
 }
 
 .subscribe_button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
-    padding: 10px 62px 10px 29px;
+    padding: 10px;
+    min-width: 200px;
 
-    color: #ffffff;
     border-radius: 4px;
     border: none;
     margin-left: 12px;
@@ -813,10 +818,7 @@ body {
     background-color: #188ce8;
 }
 .subscribe_button-icon {
-    position: absolute;
-    top: 50%;
-    right: 28px;
-    transform: translateY(-50%);
+    margin-left: 15px;
 }
 /* ====Styles for Portfolio page=================================================== */
 
